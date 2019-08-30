@@ -11,7 +11,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build:all",
-    "build:all": "sass --watch theme:dist/theme"
+    "build:all": "sass --watch theme:dist/theme --style compact"
   },
   "author": "qiahao <404546074@qq.com>",
   "license": "ISC"

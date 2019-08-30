@@ -1,1 +1,65 @@
 @import '../common/index.scss';
+
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+}
+/* util */
+.clearfix{
+  @include utils-clearfix;
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+.overflow-hidden{
+  overflow: hidden;
+}
+.overflow-auto{
+  overflow: auto;
+}
+.overflow-x{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.overflow-y{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.hidden{
+  visibility: hidden;
+}
+.none{
+  display: none;
+}
+/* font */
+@for $i from 0 through 20 {
+  $value: 10 + ($i * 2);
+  .font-size-#{$value} {
+    font-size: $value + px
+  }
+}
+.font-size-xs {
+  font-size: $--font-size-xs;
+}
+.font-size-sm {
+  font-size: $--font-size-sm;
+}
+.font-size-md {
+  font-size: $--font-size-md;
+}
+.font-size-lg {
+  font-size: $--font-size-lg;
+}
+.font-size-xl {
+  font-size: $--font-size-xl;
+}
+.font-size-xxl {
+  font-size: $--font-size-xxl;
+}
+.font-size-base{
+  font-size: $--font-size-base;
+}
