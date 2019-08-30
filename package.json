@@ -1,0 +1,18 @@
+{
+  "name": "sass-compiler",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "sass-compiler",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "theme": "theme"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:all",
+    "build:all": "sass --watch theme:dist/theme"
+  },
+  "author": "qiahao <404546074@qq.com>",
+  "license": "ISC"
+}
