@@ -1,0 +1,30 @@
+@import '../common/index.scss';
+
+@for $i from 0 through 15 {
+  $var: 10+$i * 2;
+
+  .font-size-#{$var} {
+    font-size: $var + px;
+  }
+}
+
+@each $key,
+$value in $--font-size-map {
+  .#{$key} {
+    font-size: $value;
+  }
+}
+
+// padding magin 
+@for $i from 1 through 10 {
+  $var: $i * 5;
+
+  @each $key,
+  $value in $--padding-margin-map {
+    .#{$key}-#{$var} {
+      @each $it in $value {
+        #{$it}: $var + px
+      }
+    }
+  }
+}

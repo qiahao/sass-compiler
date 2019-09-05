@@ -10,8 +10,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:all",
-    "build:all": "sass --watch theme:dist/theme"
+    "build": "npm run build:compact",
+    "build:nested": "sass --watch  --style nested theme:dist/theme",
+    "build:expanded": "sass --watch  --style expanded theme:dist/theme",
+    "build:compact": "sass --watch  --style compact theme:dist/theme",
+    "build:compressed": "sass --watch  --style compressed theme:dist/theme"
   },
   "author": "qiahao <404546074@qq.com>",
   "license": "ISC"

@@ -1,1 +1,36 @@
 $namespace: 'bsp';
+
+// font
+$--font-size-xs: 10px;
+$--font-size-sm: 12px;
+$--font-size-md: 14px;
+$--font-size-lg: 16px;
+$--font-size-xl: 18px;
+$--font-size-xxl: 24px;
+
+$--font-size-map: (
+  font-size-xs: $--font-size-xs,
+  font-size-sm: $--font-size-sm,
+  font-size-md: $--font-size-md,
+  font-size-lg: $--font-size-lg,
+  font-size-xl: $--font-size-xl,
+  font-size-xxl: $--font-size-xxl
+);
+
+$--padding-margin-map: (
+  pd: padding,
+  pt: padding-top,
+  pr: padding-right,
+  pb: padding-bottom,
+  pl: padding-left,
+  mg: margin,
+  mt: margin-top,
+  mr: margin-right,
+  mb: margin-bottom,
+  ml: margin-left,
+  plr: padding-left padding-right,
+  ptb: padding-top padding-bottom,
+  mlr: margin-left padding-right,
+  mtb: margin-top padding-bottom
+);
+// padding margin
